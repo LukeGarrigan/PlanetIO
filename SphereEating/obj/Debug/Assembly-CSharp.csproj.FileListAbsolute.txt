@@ -1,0 +1,2 @@
+C:\Users\Luke\Documents\UnityGames\SphereEating\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Luke\Documents\UnityGames\SphereEating\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
