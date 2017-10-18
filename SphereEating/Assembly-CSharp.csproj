@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Attractor.cs" />
+     <Compile Include="Assets\BlackHole.cs" />
      <Compile Include="Assets\DisplayScore.cs" />
      <Compile Include="Assets\FollowPlayer.cs" />
      <Compile Include="Assets\FoodManager.cs" />

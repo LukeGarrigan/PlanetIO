@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 3327446}
   - component: {fileID: 3327447}
   - component: {fileID: 3327448}
+  - component: {fileID: 3327444}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -200,6 +201,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3327444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3327439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b3c043ed980404eb4aba51b536fa2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &3327445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -229,6 +241,7 @@ MonoBehaviour:
   rb: {fileID: 3327445}
   forwardForce: 100
   sidewaysForce: 100
+  speed: 20
 --- !u!114 &3327447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,10 +273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b56af58fe2f4424db803b8a4899fef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PullRadius: 10
-  GravitationalPull: 100
+  PullRadius: 80
+  GravitationalPull: 10000
   MinRadius: 0
-  DistanceMultiplier: 10
+  DistanceMultiplier: 19.16
   playerMass: {fileID: 3327447}
   LayersToPull:
     serializedVersion: 2
@@ -364,6 +377,7 @@ MonoBehaviour:
   offset: {x: 0, y: 5, z: -2}
   playerMass: {fileID: 3327447}
   zoomOut: {x: 0, y: 0, z: 0}
+  Tower: {fileID: 3327439}
 --- !u!1 &740502434
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +460,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 740502434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 303.5, y: 267.5, z: 0}
+  m_LocalPosition: {x: 301, y: 262.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1839288472}
@@ -555,7 +569,7 @@ MonoBehaviour:
   maxZ: 50
   minZ: -50
   minX: -50
-  numberOfFoods: 1000
+  numberOfFoods: 100
 --- !u!4 &1242892558
 Transform:
   m_ObjectHideFlags: 0
