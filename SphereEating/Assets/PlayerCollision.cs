@@ -25,6 +25,8 @@ public class PlayerCollision : MonoBehaviour {
             transform.localScale += new Vector3(foodMass.mass / 10, foodMass.mass / 10, foodMass.mass / 10);
             Instantiate(food, new Vector3(Random.Range(minX, maxX), 0.75f, Random.Range(minZ, maxZ)), Quaternion.identity);
         }
+
+        /*
         else if (collisionInfo.collider.tag == "BombTag") {
             Destroy(collisionInfo.collider.gameObject);
             Debug.Log(bombMass.mass);
@@ -32,5 +34,6 @@ public class PlayerCollision : MonoBehaviour {
             //transform.localScale += new Vector3(bombMass.mass / 10, bombMass.mass / 10, bombMass.mass / 10);
             Instantiate(food, new Vector3(Random.Range(minX, maxX), 0.75f, Random.Range(minZ, maxZ)), Quaternion.identity);
         }
+        */
     }
 }

@@ -59,6 +59,7 @@
      <Compile Include="Assets\MovePlayer.cs" />
      <Compile Include="Assets\PlanetGravity.cs" />
      <Compile Include="Assets\PlayerCollision.cs" />
+     <Compile Include="Assets\SetMass.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
